@@ -8,6 +8,19 @@
  * composer install
  */
 
+use Symfony\Component\HttpClient\HttpClient;
 
  // Don't touch that, you need it
 require_once('vendor/autoload.php');
+
+$client = HttpClient::create();
+$response = $client->request(
+    'GET',
+    'https://wizard-world-api.herokuapp.com/Houses'
+);
+
+$houses = $response->toArray();
+
+foreach($houses as $house) {
+    echo $house['name'] . PHP_EOL;
+}
