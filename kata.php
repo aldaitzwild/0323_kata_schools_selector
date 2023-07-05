@@ -5,7 +5,7 @@
  * and show each house you get with their name one line.
  * To get all that, please use HttpClient (doc : https://symfony.com/doc/current/http_client.html)
  * You already have it in your dependancies, so don't forget to do a
- * composer install
+ * composer install.
  */
 
 use Symfony\Component\HttpClient\HttpClient;
