@@ -1,0 +1,17 @@
+{
+    "name": "thoma/schools_selector",
+    "autoload": {
+        "psr-4": {
+            "Thoma\\SchoolsSelector\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Thomas Aldaitz",
+            "email": "thomas.aldaitz@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/http-client": "^6.3"
+    }
+}
